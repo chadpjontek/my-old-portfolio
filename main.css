@@ -37,6 +37,8 @@ i.fa {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+
 /*clearfixes*/
 
 .cf:before,
