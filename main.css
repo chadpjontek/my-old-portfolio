@@ -1,13 +1,19 @@
-.logo-font {
-  font-family: 'Michroma', sans-serif;
-  letter-spacing: 0.14em;
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
 
 body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  background: #56472c;
+  /* background: #56472c; */
   line-height: 170%;
 }
 
@@ -25,19 +31,49 @@ h6 {
   font-weight: 300;
   line-height: 150%;
 }
+h1 {
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 1.4em;
+}
+ul {
+  padding: 1em;
+}
 
 i.fa {
   color: #333;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+.logo-font {
+  font-family: 'Michroma', sans-serif;
+  letter-spacing: 0.14em;
 }
 
+.col-md-12 {
+  padding: 0;
+}
+
+.row {
+  margin: 0px;
+}
+
+#my-pic {
+  padding: 0 10vw;
+}
+
+
+.section {
+  margin-top: 10px;
+}
+#tape-drive {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+#education {
+  margin: 30px auto 0;
+}
 
 /*clearfixes*/
 
@@ -51,16 +87,11 @@ i.fa {
   clear: both;
 }
 
-.main-container {
-  background: #fff;
-  max-width: 1000px;
-  margin: 25px auto 25px auto;
-  position: relative;
-}
 
 .container {
+  border: 10px solid #56472c;
   position: relative;
-  padding: 25px;
+  padding: 10px 20px;
 }
 
 /*animation element*/
@@ -130,7 +161,7 @@ i.fa {
 }
 
 .animation-element.slide-left.work img {
-  max-width: 270px;
+  /* max-width: 270px; */
   box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.5);
 }
 
@@ -165,7 +196,24 @@ i.fa {
   padding: 0px;
 }
 
+@media screen and (max-width: 357px){
+ h1, h2 {
+   font-size: 1.3em;
+ }
+}
+
+@media screen and (max-width: 550px){
+  .container {
+    border-width: 4px;
+    padding: 10px 0;
+  }
+  p {
+    padding: 0 5px;
+  }
+}
+
 @media screen and (max-width: 768px){
+
   /*works*/
   .animation-element.slide-left.work,
   .animation-element.slide-left.work:nth-of-type(odd),
@@ -183,12 +231,24 @@ i.fa {
 }
 @media screen and (max-width: 768px){
   .animation-element.slide-left.work img{
-    width: 270px;
+    /* width: 270px; */
     margin-bottom: 5px;
   }
 }
 
-
+@media screen and (min-width: 768px) {
+  #my-pic {
+    padding: 0;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  #tape-drive {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
+}
 
 /*=========================
   Icons
