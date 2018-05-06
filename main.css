@@ -96,6 +96,14 @@ i.fa {
 
 /*animation element*/
 
+.animation-element.slide-left.work .right,
+.animation-element.slide-left.work .left,
+.animation-element.slide-left.work .content,
+.animation-element.slide-left.work .rating{
+  text-align: center;
+  float: none;
+}
+
 .animation-element {
   opacity: 0;
   position: relative;
@@ -220,13 +228,6 @@ i.fa {
   .animation-element.slide-left.work:nth-of-type(even){
     width: 100%;
     margin: 0px 0px 20px 0px;
-  }
-  .animation-element.slide-left.work .right,
-  .animation-element.slide-left.work .left,
-  .animation-element.slide-left.work .content,
-  .animation-element.slide-left.work .rating{
-    text-align: center;
-    float: none;
   }
 }
 @media screen and (max-width: 768px){
