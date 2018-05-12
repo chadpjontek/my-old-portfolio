@@ -45,6 +45,10 @@ i.fa {
   color: #333;
 }
 
+a {
+  color: #3B5998;
+}
+
 .logo-font {
   font-family: 'Michroma', sans-serif;
   letter-spacing: 0.14em;
